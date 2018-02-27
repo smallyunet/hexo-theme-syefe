@@ -12,8 +12,22 @@ block content
         h2
           a(href=url_for(article.path))= article.title || 'No Title'
         div.article-meta
-          time(datetime=date_xml(article.date))= date(article.date)
-      br.clear
+          i(class='fa fa-pencil')
+            | 
+            if article.author
+              a= article.author
+            else
+              a= config.author
+          time(datetime=article.date.toJSON())
+            i(class='fa fa-clock-o')  #{date(article.date, date_format)}
+          if article.tags.length
+            span.article-tags
+              i(class='fa fa-tag')
+                each tag in article.tags.data
+                  | 
+                  a(href=url_for('/tags/' + tag.name))= tag.name
+        br.clear
     - })
+
   div!= paginator()
 

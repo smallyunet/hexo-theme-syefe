@@ -7,7 +7,7 @@ aside
   ul.product-overview
     each url, label in theme.menu
       li
-        a(href=url)= label
+        a(href=(config.root + url))= label
   
   p.efe-desc= config.description
 

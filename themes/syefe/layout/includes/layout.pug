@@ -17,7 +17,7 @@ html(lang=config.language)
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from config.yml
       each url in theme.stylesheets
-        link(rel='stylesheet', href=url)
+        link(rel='stylesheet', href=(config.root + url))
     link(rel="icon", href=config.root + 'img/favicon.png')
   body
     if body
@@ -33,6 +33,6 @@ html(lang=config.language)
   footer
     p.copy
       | &copy; Designed by 
-      a(href='http:efe.baidu.com' target='_blank' title='EFE') EFE
+      a(href='http://efe.baidu.com' target='_blank' title='EFE') EFE
       |  | Powered By 
       a(href='http://hexo.io' target='_blank' title='Hexo') Hexo

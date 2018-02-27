@@ -21,6 +21,6 @@ stylesheets:
 - /css/font-awesome.css
 
 # scripts loaded in the end of the body
-scripts:
-- /js/syefe.js
+# scripts:
+# - /js/syefe.js
 
