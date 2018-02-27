@@ -1,0 +1,32 @@
+extends includes/layout.pug
+
+block content
+  include includes/aside.pug
+  article
+    h1= page.title
+    if page.date
+      div.article-meta
+        i(class='fa fa-pencil')
+          | 
+          if page.author
+            a= page.author
+          else
+            a= config.author
+        time(datetime=page.date.toJSON())
+          i(class='fa fa-clock-o')  #{date(page.date, date_format)}
+        if page.tags.length
+          span.article-tags
+            i(class='fa fa-tag')
+              each tag in page.tags.data
+                | 
+                a(href=url_for('/tags/' + tag.name))= tag.name
+    != page.content
+
+  nav.article-pagination
+    if page.prev
+      a.article-prev(href=url_for(page.prev.path)) 前一篇: #{page.prev.title}
+    
+    if page.next
+      a.article-next(href=url_for(page.next.path)) 后一篇: #{page.next.title}
+
+  div!= paginator()

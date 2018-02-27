@@ -1,0 +1,18 @@
+
+aside
+  a.home(href='/' title=config.title)= config.title
+  nav
+    a= config.subtitle
+
+  ul.product-overview
+    each url, label in theme.menu
+      li
+        a(href=url)= label
+  
+  p.efe-desc= config.description
+
+  dl.tags
+    dt Tages
+    each tag in site.tags.data
+      dd
+        a(href=url_for('/tags/' + tag.name))= tag.name

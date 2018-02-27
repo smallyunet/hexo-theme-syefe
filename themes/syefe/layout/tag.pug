@@ -1,0 +1,19 @@
+extends includes/layout.pug
+
+block content
+  include includes/aside.pug
+  main
+    - page.posts.each(function(article){
+      if article.link
+        a(href=url_for(article.link) target="_blank")
+          = article.title || 'No Title'
+        time(datetime=date_xml(article.date))= date(article.date)
+      else
+        h2
+          a(href=url_for(article.path))= article.title || 'No Title'
+        div.article-meta
+          time(datetime=date_xml(article.date))= date(article.date)
+      br.clear
+    - })
+  div!= paginator()
+

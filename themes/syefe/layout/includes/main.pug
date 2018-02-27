@@ -1,0 +1,30 @@
+
+main
+  if page.posts.length > 0
+      each post in page.posts.sort('date', -1).limit(10).toArray()
+        article.article-index
+          h2
+            a(href=config.root + post.path)= post.title
+          if post.date
+            div.article-meta
+              i(class='fa fa-pencil')
+                | 
+                if post.author
+                  a= post.author
+                else
+                  a= config.author
+              time(datetime=post.date.toJSON())
+                i(class='fa fa-clock-o')  #{date(post.date, date_format)}
+              if post.tags.length
+                span.article-tags
+                  i(class='fa fa-tag')
+                    each tag in post.tags.data
+                      | 
+                      a(href=url_for('/tags/' + tag.name))= tag.name
+          section
+            if post.excerpt
+              != post.excerpt
+            else
+              p
+                != post.title
+            a.article-readmore(href=url_for(post.path) + '#more') 阅读更多

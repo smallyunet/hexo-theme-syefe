@@ -1,0 +1,17 @@
+extends includes/layout.pug
+
+block content
+  include includes/aside.pug
+  a.rss(title='RSS Feed' href='/atom.xml')
+    <i class="fa fa-rss-square"></i>
+  include includes/main.pug
+  nav#page-nav
+    -
+      var options = {
+        prev_text: '<',
+        next_text: '>'
+      }
+    != paginator(options)
+
+
+

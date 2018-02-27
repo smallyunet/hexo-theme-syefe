@@ -1,0 +1,9 @@
+extends includes/layout.pug
+
+block content
+  include includes/aside.pug
+  article#page
+    h1= page.title
+    != page.content
+  div!= paginator()
+
