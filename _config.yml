@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.smallyu.net
-root: /
+url: https://smallyunet.github.io/hexo-theme-syefe/
+root: /hexo-theme-syefe/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
