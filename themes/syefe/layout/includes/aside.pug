@@ -1,13 +1,16 @@
 
 aside
-  a.home(href='/' title=config.title)= config.title
+  a.home(href=(config.root) title=config.title)= config.title
   nav
     a= config.subtitle
 
   ul.product-overview
     each url, label in theme.menu
       li
-        a(href=(config.root + url))= label
+        if url == '/'
+          a(href=(config.root))= label
+        else 
+          a(href=(config.root + url))= label
   
   p.efe-desc= config.description
 
