@@ -639,3 +639,9 @@ and (max-device-width : 480px) {
       display: none;
   }
 }
+
+@media screen and (max-width:800px) {
+  aside {
+    display: none;
+  }
+}
