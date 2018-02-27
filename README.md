@@ -1,12 +1,5 @@
----
-title: README
-date: 2018-02-27 23:32:09
-tags: README
----
 
 演示地址: https://smallyunet.github.io/hexo-theme-syefe 
-
-仓库地址: https://github.com/smallyunet/hexo-theme-syefe 
 
 ### Front-matter:
 
