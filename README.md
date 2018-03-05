@@ -3,7 +3,13 @@
 
 ### 开始使用
 
-master分支下是整个[演示站点](https://smallyunet.github.io/hexo-theme-syefe)的资源文件，使用主题请将仓库克隆到本地后查看/themes/syefe。
+master分支下是整个演示站点的资源文件，使用主题请将仓库克隆到本地后查看/themes/syefe。
+
+### 头像
+
+配置文件中avator属性为true或者false决定侧栏是否显示头像。
+
+自定义头像请替换source/img/avator.png文件。
 
 ### Front-matter:
 

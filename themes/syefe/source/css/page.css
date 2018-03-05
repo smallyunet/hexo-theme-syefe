@@ -72,6 +72,7 @@ a:hover {
 }
 
 aside {
+  padding-top: 30px;
   position: absolute;
   top: 5px;
   left: 20px;
@@ -638,4 +639,15 @@ and (max-device-width : 480px) {
   .fecs-banner-zone {
       display: none;
   }
+}
+
+
+/* other */
+aside .avator {
+  margin: 0 auto;
+  height: 96px;
+  width: 96px;
+  border-radius: 50% 50%;
+  background-image: url("../img/avator.png");
+  background-size: 100% 100%;
 }
