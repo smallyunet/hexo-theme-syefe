@@ -2,7 +2,8 @@
 aside
 
   if theme.avator
-    div.avator
+    a(href=(config.root) title=config.title)
+      div.avator
 
   a.home(href=(config.root) title=config.title)= config.title
   nav
