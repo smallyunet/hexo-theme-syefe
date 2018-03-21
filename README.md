@@ -33,6 +33,4 @@ master分支下是整个演示站点的资源文件，使用主题请将仓库�
 
 ### License
 
-[MIT License](https://opensource.org/licenses/MIT)
-
-<!-- more -->
+[MIT](https://opensource.org/licenses/MIT)
