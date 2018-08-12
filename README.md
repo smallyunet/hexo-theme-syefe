@@ -17,7 +17,7 @@ git clone https://github.com/smallyunet/hexo-theme-syefe.git
 
 配置文件中avator属性为true或者false决定侧栏是否显示头像。
 
-自定义头像请替换source/img/avator.png文件。
+自定义头像请替换source/img/avatar.png文件。
 
 ### Front-matter:
 
