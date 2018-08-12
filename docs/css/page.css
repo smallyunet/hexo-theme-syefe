@@ -248,6 +248,10 @@ article {
   font-size: 12px;
 }
 
+.article-meta a {
+  cursor: pointer;
+}
+
 .article-tags,
 .article-meta time {
   margin-left: 20px;
@@ -648,6 +652,6 @@ aside .avator {
   height: 96px;
   width: 96px;
   border-radius: 50% 50%;
-  background-image: url("../img/avator.png");
+  background-image: url("../img/avatar.png");
   background-size: 100% 100%;
 }

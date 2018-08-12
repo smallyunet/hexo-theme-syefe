@@ -6,6 +6,8 @@ tags: README
 
 仓库地址: https://github.com/smallyunet/hexo-theme-syefe 
 
+<!-- more -->
+
 ### 开始使用
 
 master分支下是整个演示站点的资源文件，使用主题请将仓库克隆到本地后查看/themes/syefe。
@@ -35,5 +37,3 @@ syefe基本还原了EFE的版式，但没有实现其之外的功能，如归档
 ### License
 
 [MIT License](https://opensource.org/licenses/MIT)
-
-<!-- more -->
